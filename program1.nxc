@@ -4,6 +4,11 @@
 #define SPEED 80 //power
 #define DISTANCE 30 //cm
 
+mutex sensorMutex;
+
+task move();
+task checkSensors();
+
 void square(int speed, int sizesec);
 void arc(int speed, int radius);
 void makeAStar(int speed);
@@ -18,23 +23,36 @@ void lookAround();
 void lookLeft();
 void lookRight();
 
+void checkUltraSensorPort3(int speed);
+
 task main()
 {
-  start checkSensors();
+  Precedes(move);
+  SetSensorLowspeed(IN_3);
+}
+
+task move()
+{
+  Acquire(sensorMutex);
   //lookAround();
   //square(SPEED, 1000);
   //rotate(70);
   //Wait(1000);
   arc(SPEED, 300);
-  
+
   //makeAStar(70);
   Off(OUT_ABC);
-
+  Release(sensorMutex);
 }
 
+// not used yet
 task checkSensors()
 {
-  SetSensorLowspeed(IN_3);
+  while(true){
+    Acquire(sensorMutex);
+    checkUltraSensorPort3(SPEED);
+    Release(sensorMutex);
+  }
 }
 
 void square(int speed, int sizesec)
@@ -50,8 +68,10 @@ void square(int speed, int sizesec)
   Off(OUT_ABC);
 }
 
-void checkUltraSensorPort3(){
-
+void checkUltraSensorPort3(int speed){
+   if(SensorUS(IN_3)<DISTANCE){
+     moveForward(speed);
+   }
 }
 
 void arc(int speed, int radius)
@@ -61,7 +81,7 @@ void arc(int speed, int radius)
     while(x != 360){
       moveWithAngle(speed, x);
       Wait(radius);
-      x += 15;
+      x += 30;
     }
     i++;
   }
@@ -100,7 +120,7 @@ void moveBack(int speed)
   Off(OUT_C);
 }
 
-void moveWithHeadingDirection(int speed, float angle)
+/*void moveWithHeadingDirection(int speed, float angle)
 {
   float p, q, r;
   p = cos(angle)*1 - sin(angle)*0;
@@ -110,7 +130,7 @@ void moveWithHeadingDirection(int speed, float angle)
   OnRev(OUT_B, speed*p);
   OnRev(OUT_A, speed*q);
   OnRev(OUT_C, speed*r);
-}
+}*/
 
 void moveWithAngle(int speed, float angle)
 {
