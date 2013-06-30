@@ -1,0 +1,218 @@
+//#import "math.h"
+#include "NXCDefs.h"
+
+#define SPEED 80 //power
+#define DISTANCE 30 //cm
+
+void square(int speed, int sizesec);
+void arc(int speed, int radius);
+void makeAStar(int speed);
+void moveForward(int speed);
+void moveLeft(int speed);
+void moveRight(int speed);
+void moveBack(int speed);
+void rotate(int speed);
+void moveWithAngle(int speed, float angle);
+void moveWithHeadingDirection(int speed, float angle);
+void lookAround();
+void lookLeft();
+void lookRight();
+
+task main()
+{
+  start checkSensors();
+  //lookAround();
+  //square(SPEED, 1000);
+  //rotate(70);
+  //Wait(1000);
+  arc(SPEED, 300);
+  
+  //makeAStar(70);
+  Off(OUT_ABC);
+
+}
+
+task checkSensors()
+{
+  SetSensorLowspeed(IN_3);
+}
+
+void square(int speed, int sizesec)
+{
+  moveForward(speed);
+  Wait(sizesec);
+  moveLeft(speed);
+  Wait(sizesec);
+  moveBack(speed);
+  Wait(sizesec);
+  moveRight(speed);
+  Wait(sizesec);
+  Off(OUT_ABC);
+}
+
+void checkUltraSensorPort3(){
+
+}
+
+void arc(int speed, int radius)
+{
+  int i, x = 0;
+  while(i < 4){
+    while(x != 360){
+      moveWithAngle(speed, x);
+      Wait(radius);
+      x += 15;
+    }
+    i++;
+  }
+  Off(OUT_ABC);
+}
+
+//straigth line, heading still
+void moveForward(int speed)
+{
+  OnFwd(OUT_A, speed);
+  OnRev(OUT_B, speed);
+  Off(OUT_C);
+}
+
+//straigth line, heading still
+void moveLeft(int speed)
+{
+  OnFwd(OUT_C, speed);
+  OnRev(OUT_B, speed/2);
+  OnRev(OUT_A, speed/2);
+}
+
+//straigth line, heading still
+void moveRight(int speed)
+{
+  OnRev(OUT_C, speed);
+  OnFwd(OUT_B, speed/2);
+  OnFwd(OUT_A, speed/2);
+}
+
+//straigth line, heading still
+void moveBack(int speed)
+{
+  OnRev(OUT_A, speed);
+  OnFwd(OUT_B, speed);
+  Off(OUT_C);
+}
+
+void moveWithHeadingDirection(int speed, float angle)
+{
+  float p, q, r;
+  p = cos(angle)*1 - sin(angle)*0;
+  q = cos(angle+120)*1 - sin(angle+120)*0;
+  r = cos(angle+240)*1 - sin(angle+240)*0;
+
+  OnRev(OUT_B, speed*p);
+  OnRev(OUT_A, speed*q);
+  OnRev(OUT_C, speed*r);
+}
+
+void moveWithAngle(int speed, float angle)
+{
+  if(angle == 0){
+    moveRight(speed);
+  }
+  else if(angle == 15){
+  
+  }
+  else if(angle == 30){
+    OnFwd(OUT_A, speed);
+    OnRev(OUT_C, speed);
+    Off(OUT_B);
+  }
+  else if(angle == 45){
+    OnFwd(OUT_A, speed);
+    OnRev(OUT_B, speed/4);
+    OnRev(OUT_C, (speed/4)*3);
+  }
+  else if(angle == 60){
+    OnFwd(OUT_A, speed);
+    OnRev(OUT_B, speed/2);
+    OnRev(OUT_C, speed/2);
+  }
+  else if(angle == 90){
+    moveForward(speed);
+  }
+  else if(angle == 120){
+    OnRev(OUT_B, speed);
+    OnFwd(OUT_A, speed/2);
+    OnFwd(OUT_C, speed/2);
+  }
+  else if(angle == 150){
+    OnFwd(OUT_C, speed);
+    OnRev(OUT_B, speed);
+    Off(OUT_A);
+  }
+  else if(angle == 180){
+    moveLeft(speed);
+  }
+  else if(angle == 210){
+    OnRev(OUT_A, speed);
+    OnFwd(OUT_C, speed);
+    Off(OUT_B);
+  }
+  else if(angle == 240){
+    OnRev(OUT_A, speed);
+    OnFwd(OUT_B, speed/2);
+    OnFwd(OUT_C, speed/2);
+  }
+  else if(angle == 270){
+    moveBack(speed);
+  }
+  else if(angle == 300){
+    OnFwd(OUT_B, speed);
+    OnRev(OUT_A, speed/2);
+    OnRev(OUT_C, speed/2);
+  }
+  else if(angle == 330){
+    OnRev(OUT_C, speed);
+    OnFwd(OUT_B, speed);
+    Off(OUT_A);
+  }
+}
+
+// stand still
+void rotate(int speed)
+{
+  OnFwd(OUT_ABC, speed);
+}
+
+// stand still
+void lookAround()
+{
+  lookLeft();
+  lookRight();
+}
+
+void lookLeft()
+{
+  OnFwd(OUT_C, 50);
+  Wait(200);
+}
+
+void lookRight()
+{
+  OnRev(OUT_C, 50);
+  Wait(200);
+}
+
+void makeAStar(int speed){
+  while(true){
+    OnFwd(OUT_C, speed);
+    Wait(1500);
+    Off(OUT_ABC);
+    OnFwd(OUT_B, speed);
+    Wait(1500);
+    Off(OUT_ABC);
+    OnFwd(OUT_A, speed);
+    Wait(1500);
+    Off(OUT_ABC);
+  }
+}
+
+
