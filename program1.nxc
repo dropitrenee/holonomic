@@ -185,8 +185,8 @@ void moveWithHeadingDirection(int speed, float angle)
   q = cos(angle+120)*1 - sin(angle+120)*0;
   r = cos(angle+240)*1 - sin(angle+240)*0;*/
   p = lookUpCos[angle];
-  p = lookUpCos[angle+120];
-  p = lookUpCos[angle+240];
+  q = lookUpCos[angle+120];
+  r = lookUpCos[angle+240];
 
   OnRev(OUT_B, speed*p);
   OnRev(OUT_A, speed*q);
