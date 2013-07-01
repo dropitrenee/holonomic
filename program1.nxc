@@ -1,15 +1,8 @@
-// Author: dropitrenee
-
 //#import "math.h"
 #include "NXCDefs.h"
 
 #define SPEED 80 //power
 #define DISTANCE 30 //cm
-
-mutex sensorMutex;
-
-task move();
-task checkSensors();
 
 void square(int speed, int sizesec);
 void arc(int speed, int radius);
@@ -84,35 +77,18 @@ float lookUpCos[] = {1.0, 0.5403023, -0.41614684, -0.9899925, -0.6536436, 0.2836
 
 task main()
 {
-  Precedes(move);
   SetSensorLowspeed(IN_3);
-}
-
-task move()
-{
-  Acquire(sensorMutex);
   //lookAround();
   //square(SPEED, 1000);
   //rotate(70);
   //Wait(1000);
   moveWithHeadingDirection(SPEED, 30);
   Wait(300);
-  
+
   arc(SPEED, 300);
 
   //makeAStar(70);
   Off(OUT_ABC);
-  Release(sensorMutex);
-}
-
-// not used yet
-task checkSensors()
-{
-  while(true){
-    Acquire(sensorMutex);
-    checkUltraSensorPort3(SPEED);
-    Release(sensorMutex);
-  }
 }
 
 void square(int speed, int sizesec)
