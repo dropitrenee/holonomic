@@ -27,13 +27,17 @@ public class LookUpTable {
     
     static void fillSin(){
         for(int x = 0; x < 360; x++){
-            lookUpTableSin[x] = (float) Math.sin(x);
+            float y = (float)(2 * Math.PI)/360;
+            float z = y * x;
+            lookUpTableSin[x] = (float) Math.sin(z);
         }
     }
     
     static void fillCos(){
         for(int x = 0; x < 360; x++){
-            lookUpTableCos[x] = (float) Math.cos(x);
+            float y = (float)(2 * Math.PI)/360;
+            float z = y * x;
+            lookUpTableCos[x] = (float) Math.cos(z);
         }
     }
     
