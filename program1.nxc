@@ -29,11 +29,7 @@ task main()
   //lookAround();
   //square(SPEED, 1000);
   //rotate(70);
-  //Wait(1000);
-  moveWithHeadingDirection(SPEED, 50);
-  Wait(300);
-
-  //arc(SPEED, 300);
+  arc(SPEED, 200);
 
   //makeAStar(70);
   //Off(OUT_ABC);
@@ -61,11 +57,13 @@ void checkUltraSensorPort3(int speed){
 void arc(int speed, int radius)
 {
   int i, x = 0;
-  while(i < 4){
+  while(i < 2){
     while(x != 360){
-      moveWithAngle(speed, x);
+      moveWithHeadingDirection(speed, x);
+      //moveWithAngle(speed, x);
       Wait(radius);
-      x += 30;
+      x += 10;
+      //It is stopping to fast. Is not a whole circle
     }
     i++;
   }
