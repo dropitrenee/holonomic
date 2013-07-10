@@ -1,61 +1,82 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__DU0SetSensorLowspeed_inline_main	5	1	0	4	5
-1	__Wait_7qG2_ms_7qG2_000_inline_arc	5	1	4	4	2
-2	__moveWithHeadingDirection_7qG2_p_7qG2_000	10	1	8	4	1
-3	__D0SetSensorLowspeed_inline_main	6	1	12	4	2
-4	__DF0moveWithHeadingDirection	10	1	16	4	6
-5	__D0moveWithHeadingDirection	6	1	20	4	26
-6	__D0arc	6	1	24	4	10
-7	__signed_stack_001moveWithHeadingDirection	6	1	28	4	30
-8	__OnRevMutex	9	0	32	4	6
-9	__signed_stack_001arc	6	1	36	4	4
-10	__moveWithHeadingDirection_7qG2_q_7qG2_000	10	1	40	4	5
-11	__moveWithHeadingDirection_7qG2_r_7qG2_000	10	1	44	4	1
-12	__moveWithHeadingDirection_7qG2_speed_7qG2_000	4	1	48	2	4
-13	__moveWithHeadingDirection_7qG2_angle_7qG2_000	4	1	50	2	4
-14	__moveWithHeadingDirection_7qG2_x_7qG2_000	4	1	52	2	4
-15	__moveWithHeadingDirection_7qG2_y_7qG2_000	4	1	54	2	3
-16	__moveWithHeadingDirection_7qG2_z_7qG2_001	4	1	56	2	2
-17	__arc_7qG2_i_7qG2_000	4	1	58	2	3
-18	__arc_7qG2_x_7qG2_000	4	1	60	2	5
-19	__moveWithHeadingDirection_7qG2_motorB_7qG2_000	4	1	62	2	6
-20	__arc_7qG2_speed_7qG2_000	4	1	64	2	2
-21	__arc_7qG2_radius_7qG2_000	4	1	66	2	2
-22	__ResetSensorTmp	1	1	68	1	2
-23	__ResetSensorPort	1	1	69	1	3
-24	__moveWithHeadingDirection_return	1	1	70	1	3
-25	__constVal2	2	0	71	1	1
-26	____ResetSensorSubroutine_return	1	1	72	1	3
-27	__constVal32	2	0	73	1	12
-28	__OnRev_Tmp	2	1	74	1	6
-29	__constVal1	2	0	75	1	4
-30	__constVal3	2	0	76	1	4
-31	__constVal0	2	1	77	1	14
-32	__constVal63	2	0	78	1	4
-33	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	79	1	2
-34	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	80	1	2
-35	____initialize_global_data_return	1	1	81	1	3
-36	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	82	1	4
-37	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	83	1	2
-38	__arc_return	1	1	84	1	3
-39	__constVal96	2	0	85	1	4
-40	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	86	1	2
-41	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	87	1	2
-42	__OUT_ABC	7	0	88	4	1
-43	__OUT_ABC.__OUT_ABC_type	1	0	0	1	0
-44	lookUpCos	7	0	90	4	2
-45	lookUpCos.lookUpCos_type	10	0	0	4	0
+0	__signed_stack_002checkHeading	6	1	0	4	2
+1	__signed_stack_001checkHeading	6	1	4	4	2
+2	__CLSWMutex3	9	0	8	4	2
+3	__CLSRMutex3	9	0	12	4	2
+4	__RLSBmutex3	9	0	16	4	2
+5	__D0checkHeading	6	1	20	4	12
+6	__DU0SetSensorLowspeed_inline_main	5	1	24	4	10
+7	__D0SetSensorLowspeed_inline_main	6	1	28	4	4
+8	__CLSCSMutex3	9	0	32	4	2
+9	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	36	1	2
+10	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	37	1	4
+11	__checkHeading_return	1	1	38	1	3
+12	__PFTmp	1	1	39	1	1
+13	__constVal15	2	0	40	1	1
+14	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	41	1	4
+15	____initialize_global_data_return	1	1	42	1	3
+16	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	43	1	10
+17	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	44	1	4
+18	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	45	1	4
+19	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	46	1	4
+20	__RLSBIterations3	1	1	47	1	4
+21	__ResetSensorTmp	1	1	48	1	2
+22	____ResetSensorSubroutine_return	1	1	49	1	4
+23	__LSWriteOptions3	1	1	50	1	1
+24	__ResetSensorPort	1	1	51	1	4
+25	__constVal1	2	0	52	1	6
+26	__constVal0	2	1	53	1	1
+27	__constVal3	2	0	54	1	1
+28	____ReadLSBytes3_return	1	1	55	1	3
+29	__RLSBResult3	2	1	56	1	7
+30	__RLSBytesCount3	1	1	57	1	9
+31	__CLSWArgs3	8	0	4	12	5
+32	__CLSWArgs3.Result	2	1	60	1	5
+33	__CLSWArgs3.Port	1	1	61	1	5
+34	__CLSWArgs3.Buffer	7	0	62	4	5
+35	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+36	__CLSWArgs3.ReturnLen	1	1	64	1	5
+37	__CLSCSArgs3	8	0	3	4	4
+38	__CLSCSArgs3.Result	2	1	68	1	4
+39	__CLSCSArgs3.Port	1	1	69	1	4
+40	__CLSCSArgs3.BytesReady	1	1	70	1	4
+41	__TextOutArgs	8	0	4	16	6
+42	__TextOutArgs.Result	2	1	72	1	6
+43	__TextOutArgs.Location	8	0	2	4	6
+44	__TextOutArgs.Location.X	4	1	76	2	6
+45	__TextOutArgs.Location.Y	4	1	78	2	6
+46	__TextOutArgs.Text	7	0	80	4	6
+47	__TextOutArgs.Text.Text_type	1	0	0	1	0
+48	__TextOutArgs.Options	5	1	84	4	6
+49	__CLSRArgs3	8	0	4	12	5
+50	__CLSRArgs3.Result	2	1	88	1	5
+51	__CLSRArgs3.Port	1	1	89	1	5
+52	__CLSRArgs3.Buffer	7	0	90	4	5
+53	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+54	__CLSRArgs3.BufferLen	1	1	92	1	5
+55	__RLSBbufLSWrite1	7	0	94	4	1
+56	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+57	__RLSReadBuf3	7	0	96	4	9
+58	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+59	__RLSLastGoodRead3	7	0	98	4	2
+60	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+61	heading	7	0	100	4	2
+62	heading.heading_type	1	0	0	1	0
+63	__strretvalcheckHeading	7	0	102	4	2
+64	__strretvalcheckHeading.__strretvalcheckHeading_type	1	0	0	1	0
+65	__strbufcheckHeading	7	0	104	4	4
+66	__strbufcheckHeading.__strbufcheckHeading_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	28	0	#line 28 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-0	29	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	28	2	#line 28 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-0	28	2	#line 28 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-0	29	2		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 2
-0	28	5	#line 28 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-0	32	5	#line 32 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-0	33	5		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	30	0	#line 30 "E:\Git\holonomic\program1.nxc"
+0	31	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	30	2	#line 30 "E:\Git\holonomic\program1.nxc"
+0	30	2	#line 30 "E:\Git\holonomic\program1.nxc"
+0	31	2		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 2
+0	30	5	#line 30 "E:\Git\holonomic\program1.nxc"
+0	31	5	#line 31 "E:\Git\holonomic\program1.nxc"
+0	32	5		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
 0	4342	7	#line 4342 "NXCDefs.h"
 0	4343	7		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
 0	4342	9	#line 4342 "NXCDefs.h"
@@ -90,257 +111,175 @@ Clump	Line	PC	Source
 0	4260	40	#line 4260 "NXCDefs.h"
 0	4344	40	#line 4344 "NXCDefs.h"
 0	4344	40	#line 4344 "NXCDefs.h"
-0	4344	40	#line 4344 "NXCDefs.h"
-0	4278	40	#line 4278 "NXCDefs.h"
-0	4279	40	#pragma macro 4
-0	4279	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
-0	4279	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-0	7439	44	#line 7439 "NXCDefs.h"
-0	4278	44	#line 4278 "NXCDefs.h"
-0	4345	44	#line 4345 "NXCDefs.h"
-0	32	44	#line 32 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-0	32	44	#line 32 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-0	33	44		set __arc_7qG2_speed_7qG2_000, 70
-0	32	47	#line 32 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-0	32	47	#line 32 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-0	33	47		set __arc_7qG2_radius_7qG2_000, 200
-0	32	50	#line 32 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-0	36	50	#line 36 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-0	37	50		subcall arc, __arc_return
-0	36	52	#line 36 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-0	37	52		exit -1, -1
+0	4345	40		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4344	42	#line 4344 "NXCDefs.h"
+0	4278	42	#line 4278 "NXCDefs.h"
+0	4279	42	#pragma macro 4
+0	4279	42		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4279	44		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4524	46	#line 4524 "NXCDefs.h"
+0	4278	46	#line 4278 "NXCDefs.h"
+0	4345	46	#line 4345 "NXCDefs.h"
+0	31	46	#line 31 "E:\Git\holonomic\program1.nxc"
+0	31	46	#line 31 "E:\Git\holonomic\program1.nxc"
+0	32	46		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 3
+0	31	49	#line 31 "E:\Git\holonomic\program1.nxc"
+0	40	49	#line 40 "E:\Git\holonomic\program1.nxc"
+0	41	49		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	4342	51	#line 4342 "NXCDefs.h"
+0	4343	51		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4342	53	#line 4342 "NXCDefs.h"
+0	4342	53	#line 4342 "NXCDefs.h"
+0	4343	53		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	4342	55	#line 4342 "NXCDefs.h"
+0	4343	55		tst 5, __D0SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	4342	58	#line 4342 "NXCDefs.h"
+0	4343	58		brtst 4, __005__ASM_Label_36, __D0SetSensorLowspeed_inline_main
+0	4342	61	#line 4342 "NXCDefs.h"
+0	4343	61		set __DU0SetSensorLowspeed_inline_main, 11
+0	4342	64	#line 4342 "NXCDefs.h"
+0	4342	64	#line 4342 "NXCDefs.h"
+0	4343	64		jmp __005__ASM_Label_37
+0	4342	66	#line 4342 "NXCDefs.h"
+0	4343	66		set __DU0SetSensorLowspeed_inline_main, 10
+0	4342	69	#line 4342 "NXCDefs.h"
+0	4342	69	#line 4342 "NXCDefs.h"
+0	4343	69		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	4247	71	#line 4247 "NXCDefs.h"
+0	4248	71		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	4247	75	#line 4247 "NXCDefs.h"
+0	4343	75	#line 4343 "NXCDefs.h"
+0	4343	75	#line 4343 "NXCDefs.h"
+0	4344	75		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4343	77	#line 4343 "NXCDefs.h"
+0	4343	77	#line 4343 "NXCDefs.h"
+0	4344	77		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	4343	80	#line 4343 "NXCDefs.h"
+0	4260	80	#line 4260 "NXCDefs.h"
+0	4261	80		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	4260	84	#line 4260 "NXCDefs.h"
+0	4344	84	#line 4344 "NXCDefs.h"
+0	4344	84	#line 4344 "NXCDefs.h"
+0	4345	84		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4344	86	#line 4344 "NXCDefs.h"
+0	4278	86	#line 4278 "NXCDefs.h"
+0	4279	86	#pragma macro 4
+0	4279	86		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4279	88		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4587	90	#line 4587 "NXCDefs.h"
+0	4278	90	#line 4278 "NXCDefs.h"
+0	4345	90	#line 4345 "NXCDefs.h"
+0	40	90	#line 40 "E:\Git\holonomic\program1.nxc"
+0	41	90	#line 41 "E:\Git\holonomic\program1.nxc"
+0	42	90		subcall checkHeading, __checkHeading_return
+0	41	92	#line 41 "E:\Git\holonomic\program1.nxc"
+0	42	92		exit -1, -1
 1	5476	0		setin __constVal1, __ResetSensorPort, 5
 1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
 1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
 1	5480	11		subret ____ResetSensorSubroutine_return
-2	60	0	#line 60 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	61	0		set __arc_7qG2_x_7qG2_000, 0
-2	60	3	#line 60 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	60	3	#line 60 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	61	3		mov __signed_stack_001arc, __arc_7qG2_i_7qG2_000
-2	60	5	#line 60 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	60	5	#line 60 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	61	5		set __D0arc, 2
-2	60	8	#line 60 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	61	8		cmp 0, __D0arc, __signed_stack_001arc, __D0arc
-2	61	12	#line 61 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	62	12		brtst 4, __ASM_Label_634, __D0arc
-2	61	15	#line 61 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	62	15		mov __signed_stack_001arc, __arc_7qG2_x_7qG2_000
-2	61	17	#line 61 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	61	17	#line 61 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	62	17		set __D0arc, 360
-2	61	20	#line 61 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	62	20		cmp 5, __D0arc, __signed_stack_001arc, __D0arc
-2	62	24	#line 62 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	63	24		brtst 4, __ASM_Label_638, __D0arc
-2	62	27	#line 62 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	63	27		mov __moveWithHeadingDirection_7qG2_speed_7qG2_000, __arc_7qG2_speed_7qG2_000
-2	62	29	#line 62 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	62	29	#line 62 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	63	29		mov __moveWithHeadingDirection_7qG2_angle_7qG2_000, __arc_7qG2_x_7qG2_000
-2	62	31	#line 62 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	64	31	#line 64 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	65	31		subcall moveWithHeadingDirection, __moveWithHeadingDirection_return
-2	64	33	#line 64 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	64	33	#line 64 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	65	33		mov __Wait_7qG2_ms_7qG2_000_inline_arc, __arc_7qG2_radius_7qG2_000
-2	64	35	#line 64 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	8551	35	#line 8551 "NXCDefs.h"
-2	8552	35		waitv __Wait_7qG2_ms_7qG2_000_inline_arc
-2	8551	37	#line 8551 "NXCDefs.h"
-2	65	37	#line 65 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	67	37	#line 67 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	68	37		set __D0arc, 10
-2	67	40	#line 67 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	68	40		add __arc_7qG2_x_7qG2_000, __arc_7qG2_x_7qG2_000, __D0arc
-2	67	44	#line 67 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	68	44	#line 68 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	69	44		jmp __ASM_Label_637
-2	68	46	#line 68 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	69	46	#line 69 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	70	46		add __arc_7qG2_i_7qG2_000, __arc_7qG2_i_7qG2_000, __constVal1
-2	69	50	#line 69 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	70	50	#line 70 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	71	50		jmp __ASM_Label_633
-2	70	52	#line 70 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	71	52	#line 71 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	72	52	#pragma macro 7
-2	72	52		setout __OUT_ABC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-2	7663	75	#line 7663 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	71	75	#line 71 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	74	75	#line 74 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-2	75	75		subret __arc_return
-3	113	0	#line 113 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	114	0		mov __signed_stack_001moveWithHeadingDirection, __moveWithHeadingDirection_7qG2_angle_7qG2_000
-3	113	2	#line 113 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	114	2	#line 114 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	115	2		set __D0moveWithHeadingDirection, 120
-3	114	5	#line 114 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	114	5	#line 114 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	115	5	#line 115 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	116	5		mov __moveWithHeadingDirection_7qG2_motorB_7qG2_000, __moveWithHeadingDirection_7qG2_angle_7qG2_000
-3	115	7	#line 115 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	115	7	#line 115 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	116	7		mov __signed_stack_001moveWithHeadingDirection, __moveWithHeadingDirection_7qG2_angle_7qG2_000
-3	115	9	#line 115 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	121	9	#line 121 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	122	9		set __D0moveWithHeadingDirection, 240
-3	121	12	#line 121 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	121	12	#line 121 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	121	12	#line 121 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	122	12		mov __signed_stack_001moveWithHeadingDirection, __moveWithHeadingDirection_7qG2_motorB_7qG2_000
-3	121	14	#line 121 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	121	14	#line 121 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	122	14		set __D0moveWithHeadingDirection, 360
-3	121	17	#line 121 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	122	17		cmp 1, __D0moveWithHeadingDirection, __signed_stack_001moveWithHeadingDirection, __D0moveWithHeadingDirection
-3	122	21	#line 122 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	123	21		brtst 4, __ASM_Label_677, __D0moveWithHeadingDirection
-3	122	24	#line 122 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	123	24		mov __signed_stack_001moveWithHeadingDirection, __moveWithHeadingDirection_7qG2_motorB_7qG2_000
-3	122	26	#line 122 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	123	26	#line 123 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	124	26		set __D0moveWithHeadingDirection, 360
-3	123	29	#line 123 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	124	29		mod __moveWithHeadingDirection_7qG2_motorB_7qG2_000, __signed_stack_001moveWithHeadingDirection, __D0moveWithHeadingDirection
-3	123	33	#line 123 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	123	33	#line 123 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	124	33	#line 124 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	124	33	#line 124 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	125	33		mov __signed_stack_001moveWithHeadingDirection, __moveWithHeadingDirection_7qG2_motorB_7qG2_000
-3	124	35	#line 124 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	125	35	#line 125 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	126	35		set __D0moveWithHeadingDirection, 90
-3	125	38	#line 125 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	126	38		div __moveWithHeadingDirection_7qG2_x_7qG2_000, __signed_stack_001moveWithHeadingDirection, __D0moveWithHeadingDirection
-3	125	42	#line 125 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	125	42	#line 125 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	126	42		mov __signed_stack_001moveWithHeadingDirection, __moveWithHeadingDirection_7qG2_motorB_7qG2_000
-3	125	44	#line 125 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	128	44	#line 128 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	129	44		set __D0moveWithHeadingDirection, 90
-3	128	47	#line 128 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	129	47		mod __moveWithHeadingDirection_7qG2_y_7qG2_000, __signed_stack_001moveWithHeadingDirection, __D0moveWithHeadingDirection
-3	128	51	#line 128 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	128	51	#line 128 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	129	51		mov __signed_stack_001moveWithHeadingDirection, __moveWithHeadingDirection_7qG2_x_7qG2_000
-3	128	53	#line 128 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	128	53	#line 128 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	129	53		set __D0moveWithHeadingDirection, 0
-3	128	56	#line 128 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	129	56		cmp 4, __D0moveWithHeadingDirection, __signed_stack_001moveWithHeadingDirection, __D0moveWithHeadingDirection
-3	129	60	#line 129 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	130	60		brtst 4, __ASM_Label_686, __D0moveWithHeadingDirection
-3	129	63	#line 129 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	130	63		mov __signed_stack_001moveWithHeadingDirection, __moveWithHeadingDirection_7qG2_y_7qG2_000
-3	129	65	#line 129 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	129	65	#line 129 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	130	65		index __moveWithHeadingDirection_7qG2_q_7qG2_000, lookUpCos, __signed_stack_001moveWithHeadingDirection
-3	129	69	#line 129 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	130	69	#line 130 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	130	69	#line 130 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	131	69	#line 131 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	132	69		jmp __ASM_Label_691
-3	131	71	#line 131 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	132	71		mov __signed_stack_001moveWithHeadingDirection, __moveWithHeadingDirection_7qG2_x_7qG2_000
-3	131	73	#line 131 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	131	73	#line 131 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	132	73		set __D0moveWithHeadingDirection, 1
-3	131	76	#line 131 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	132	76		cmp 4, __D0moveWithHeadingDirection, __signed_stack_001moveWithHeadingDirection, __D0moveWithHeadingDirection
-3	132	80	#line 132 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	133	80		brtst 4, __ASM_Label_694, __D0moveWithHeadingDirection
-3	132	83	#line 132 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	133	83		set __signed_stack_001moveWithHeadingDirection, 90
-3	132	86	#line 132 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	133	86	#line 133 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	134	86		mov __D0moveWithHeadingDirection, __moveWithHeadingDirection_7qG2_y_7qG2_000
-3	133	88	#line 133 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	134	88		sub __moveWithHeadingDirection_7qG2_z_7qG2_001, __signed_stack_001moveWithHeadingDirection, __D0moveWithHeadingDirection
-3	133	92	#line 133 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	133	92	#line 133 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	134	92		mov __signed_stack_001moveWithHeadingDirection, __moveWithHeadingDirection_7qG2_z_7qG2_001
-3	133	94	#line 133 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	133	94	#line 133 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	134	94		index __moveWithHeadingDirection_7qG2_q_7qG2_000, lookUpCos, __signed_stack_001moveWithHeadingDirection
-3	133	98	#line 133 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	134	98	#line 134 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	134	98	#line 134 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	134	98	#line 134 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	135	98		set __signed_stack_001moveWithHeadingDirection, 0
-3	134	101	#line 134 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	135	101	#line 135 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	135	101	#line 135 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	136	101		sub __moveWithHeadingDirection_7qG2_q_7qG2_000, __signed_stack_001moveWithHeadingDirection, __moveWithHeadingDirection_7qG2_q_7qG2_000
-3	135	105	#line 135 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	135	105	#line 135 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	136	105	#line 136 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	137	105		jmp __ASM_Label_703
-3	136	107	#line 136 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	137	107		mov __signed_stack_001moveWithHeadingDirection, __moveWithHeadingDirection_7qG2_x_7qG2_000
-3	136	109	#line 136 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	136	109	#line 136 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	137	109		set __D0moveWithHeadingDirection, 2
-3	136	112	#line 136 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	137	112		cmp 4, __D0moveWithHeadingDirection, __signed_stack_001moveWithHeadingDirection, __D0moveWithHeadingDirection
-3	138	116	#line 138 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	139	116		brtst 4, __ASM_Label_706, __D0moveWithHeadingDirection
-3	140	119	#line 140 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	141	119		jmp __ASM_Label_707
-3	144	121	#line 144 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	144	121	#line 144 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	144	121	#line 144 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	144	121	#line 144 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	145	121		mov __signed_stack_001moveWithHeadingDirection, __moveWithHeadingDirection_7qG2_speed_7qG2_000
-3	144	123	#line 144 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	144	123	#line 144 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	144	123	#line 144 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	145	123		mul __DF0moveWithHeadingDirection, __signed_stack_001moveWithHeadingDirection, __moveWithHeadingDirection_7qG2_p_7qG2_000
-3	145	127	#line 145 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	146	127	#pragma macro 10
-3	146	127		acquire __OnRevMutex
-3	146	128		neg __OnRev_Tmp, __DF0moveWithHeadingDirection
-3	146	131		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	146	154		release __OnRevMutex
-3	8064	155	#line 8064 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	145	155	#line 145 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	145	155	#line 145 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	146	155		mov __signed_stack_001moveWithHeadingDirection, __moveWithHeadingDirection_7qG2_speed_7qG2_000
-3	145	157	#line 145 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	145	157	#line 145 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	145	157	#line 145 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	146	157		mul __DF0moveWithHeadingDirection, __signed_stack_001moveWithHeadingDirection, __moveWithHeadingDirection_7qG2_q_7qG2_000
-3	146	161	#line 146 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	147	161	#pragma macro 10
-3	147	161		acquire __OnRevMutex
-3	147	162		neg __OnRev_Tmp, __DF0moveWithHeadingDirection
-3	147	165		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	147	188		release __OnRevMutex
-3	8079	189	#line 8079 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	146	189	#line 146 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	146	189	#line 146 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	147	189		mov __signed_stack_001moveWithHeadingDirection, __moveWithHeadingDirection_7qG2_speed_7qG2_000
-3	146	191	#line 146 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	146	191	#line 146 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	146	191	#line 146 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	147	191		mul __DF0moveWithHeadingDirection, __signed_stack_001moveWithHeadingDirection, __moveWithHeadingDirection_7qG2_r_7qG2_000
-3	147	195	#line 147 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	148	195	#pragma macro 10
-3	148	195		acquire __OnRevMutex
-3	148	196		neg __OnRev_Tmp, __DF0moveWithHeadingDirection
-3	148	199		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	148	222		release __OnRevMutex
-3	8094	223	#line 8094 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	147	223	#line 147 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	149	223	#line 149 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-3	150	223		subret __moveWithHeadingDirection_return
-4	254	0	#line 254 "C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc"
-4	255	0		subret ____initialize_global_data_return
+2	6393	0	#pragma macro 25
+2	6393	0		acquire __CLSWMutex3
+2	6393	1		or __CLSWArgs3.Port, __constVal3, __LSWriteOptions3
+2	6393	5		mov __CLSWArgs3.ReturnLen, __RLSBytesCount3
+2	6393	7		mov __CLSWArgs3.Buffer, __RLSReadBuf3
+2	6393	9		syscall 21, __CLSWArgs3
+2	6393	12		mov __RLSBResult3, __CLSWArgs3.Result
+2	6393	14		release __CLSWMutex3
+2	6393	15	#line 6393 "NXTDefs.h"
+2	6394	15		brtst 5, __RLSBError3, __RLSBResult3
+2	6395	18		set __RLSBIterations3, 60
+2	6397	21	#pragma macro 23
+2	6397	21		acquire __CLSCSMutex3
+2	6397	22		set __CLSCSArgs3.Port, 3
+2	6397	25		syscall 23, __CLSCSArgs3
+2	6397	28		mov __RLSBytesCount3, __CLSCSArgs3.BytesReady
+2	6397	30		mov __RLSBResult3, __CLSCSArgs3.Result
+2	6397	32		release __CLSCSMutex3
+2	6397	33	#line 6397 "NXTDefs.h"
+2	6398	33		sub __RLSBIterations3, __RLSBIterations3, __constVal1
+2	6399	37		brtst 2, __RLSBError3, __RLSBIterations3
+2	6400	40		brtst 0, __RLSBError3, __RLSBResult3
+2	6401	43		brtst 4, __RLSBReadyToRead3, __RLSBResult3
+2	6403	46		wait2 NA, __constVal1
+2	6404	49		jmp __RLSBDoCheckStatus3
+2	6406	51		brtst 4, __RLSBReturn3, __RLSBytesCount3
+2	6407	54		arrinit __RLSReadBuf3, __constVal0, __RLSBytesCount3
+2	6409	58	#pragma macro 25
+2	6409	58		acquire __CLSRMutex3
+2	6409	59		set __CLSRArgs3.Port, 3
+2	6409	62		mov __CLSRArgs3.BufferLen, __RLSBytesCount3
+2	6409	64		syscall 22, __CLSRArgs3
+2	6409	67		mov __RLSReadBuf3, __CLSRArgs3.Buffer
+2	6409	69		mov __RLSBResult3, __CLSRArgs3.Result
+2	6409	71		release __CLSRMutex3
+2	6409	72	#line 6409 "NXTDefs.h"
+2	6410	72		brtst 5, __RLSBError3, __RLSBResult3
+2	6411	75		mov __RLSLastGoodRead3, __RLSReadBuf3
+2	6412	77		jmp __RLSBDone3
+2	6414	79		mov __RLSReadBuf3, __RLSLastGoodRead3
+2	6416	81		arrsize __RLSBytesCount3, __RLSReadBuf3
+2	6418	84		subret ____ReadLSBytes3_return
+3	63	0	#line 63 "E:\Git\holonomic\program1.nxc"
+3	64	0		set __D0checkHeading, 1
+3	64	3	#line 64 "E:\Git\holonomic\program1.nxc"
+3	65	3		tst 5, __D0checkHeading, __D0checkHeading
+3	64	6	#line 64 "E:\Git\holonomic\program1.nxc"
+3	65	6		brtst 4, __ASM_Label_515, __D0checkHeading
+3	64	9	#line 64 "E:\Git\holonomic\program1.nxc"
+3	65	9	#pragma macro 30
+3	65	9		acquire __RLSBmutex3
+3	65	10		mov __RLSReadBuf3, __RLSBbufLSWrite1
+3	65	12		set __RLSBytesCount3, 2
+3	65	15		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+3	65	17		index __D0checkHeading, __RLSReadBuf3, 65535
+3	65	21		index __RLSBytesCount3, __RLSReadBuf3, __constVal1
+3	65	25		add __D0checkHeading, __D0checkHeading, __D0checkHeading
+3	65	29		add __D0checkHeading, __D0checkHeading, __RLSBytesCount3
+3	65	33		release __RLSBmutex3
+3	4723	34	#line 4723 "E:\Git\holonomic\program1.nxc"
+3	66	34	#line 66 "E:\Git\holonomic\program1.nxc"
+3	67	34		numtostr __strretvalcheckHeading, __D0checkHeading
+3	66	37	#line 66 "E:\Git\holonomic\program1.nxc"
+3	67	37		strcat __strbufcheckHeading, __strretvalcheckHeading
+3	66	41	#line 66 "E:\Git\holonomic\program1.nxc"
+3	67	41		mov heading, __strbufcheckHeading
+3	66	43	#line 66 "E:\Git\holonomic\program1.nxc"
+3	66	43	#line 66 "E:\Git\holonomic\program1.nxc"
+3	66	43	#line 66 "E:\Git\holonomic\program1.nxc"
+3	67	43		set __signed_stack_001checkHeading, 0
+3	66	46	#line 66 "E:\Git\holonomic\program1.nxc"
+3	66	46	#line 66 "E:\Git\holonomic\program1.nxc"
+3	67	46		set __signed_stack_002checkHeading, 48
+3	66	49	#line 66 "E:\Git\holonomic\program1.nxc"
+3	66	49	#line 66 "E:\Git\holonomic\program1.nxc"
+3	67	49		strcat __strbufcheckHeading, heading
+3	67	53	#line 67 "E:\Git\holonomic\program1.nxc"
+3	67	53	#line 67 "E:\Git\holonomic\program1.nxc"
+3	68	53		mov __TextOutArgs.Location.X, __signed_stack_001checkHeading
+3	67	55	#line 67 "E:\Git\holonomic\program1.nxc"
+3	68	55		mov __TextOutArgs.Location.Y, __signed_stack_002checkHeading
+3	67	57	#line 67 "E:\Git\holonomic\program1.nxc"
+3	68	57		set __TextOutArgs.Options, 0
+3	67	60	#line 67 "E:\Git\holonomic\program1.nxc"
+3	68	60		mov __TextOutArgs.Text, __strbufcheckHeading
+3	67	62	#line 67 "E:\Git\holonomic\program1.nxc"
+3	68	62		syscall 13, __TextOutArgs
+3	67	65	#line 67 "E:\Git\holonomic\program1.nxc"
+3	68	65		mov __D0checkHeading, __TextOutArgs.Result
+3	67	67	#line 67 "E:\Git\holonomic\program1.nxc"
+3	67	67	#line 67 "E:\Git\holonomic\program1.nxc"
+3	70	67	#line 70 "E:\Git\holonomic\program1.nxc"
+3	71	67		jmp __ASM_Label_514
+3	70	69	#line 70 "E:\Git\holonomic\program1.nxc"
+3	70	69	#line 70 "E:\Git\holonomic\program1.nxc"
+3	71	69		subret __checkHeading_return
+4	307	0	#line 307 "E:\Git\holonomic\program1.nxc"
+4	308	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
-0	main	0	C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc
-1	__ResetSensorSubroutine	55	NXTDefs.h
-2	arc	68	C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc
-3	moveWithHeadingDirection	145	C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc
-4	__initialize_global_data	370	C:\Users\RENEE-~1\AppData\Local\Temp\temp.nxc
+0	main	0	E:\Git\holonomic\program1.nxc
+1	__ResetSensorSubroutine	95	NXTDefs.h
+2	__ReadLSBytes3	108	NXTDefs.h
+3	checkHeading	194	E:\Git\holonomic\program1.nxc
+4	__initialize_global_data	265	E:\Git\holonomic\program1.nxc
